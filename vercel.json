@@ -1,13 +1,13 @@
 {
-  "functions": {
-    "api/bot.py": {
-      "runtime": "@vercel/python"
-    }
-  },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/bot",
-      "dest": "api/bot.py"
+      "source": "/api/bot",
+      "destination": "/api/bot.py"
     }
-  ]
+  ],
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 10
+    }
+  }
 }
