@@ -1,8 +1,1 @@
-aiogram
-aiohttp
-aiohttp-socks
-python-dotenv
-gspread
-oauth2client
-google-api-python-client
-google-auth
+# no external packages required; urllib is built into Python
